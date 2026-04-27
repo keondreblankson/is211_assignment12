@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 13</title>
+</head>
+<body>
+
+{% with messages = get_flashed_messages() %}
+  {% for msg in messages %}
+    <p>{{ msg }}</p>
+  {% endfor %}
+{% endwith %}
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
