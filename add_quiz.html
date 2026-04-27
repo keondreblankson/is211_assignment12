@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Add Quiz</h2>
+<form method="post">
+    Subject: <input name="subject"><br>
+    Questions: <input name="num_questions"><br>
+    Date: <input type="date" name="quiz_date"><br>
+    <button>Add</button>
+</form>
+{% endblock %}
